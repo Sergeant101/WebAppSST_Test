@@ -1,0 +1,32 @@
+2023-05-27T17:31:59.4411030+05:00  [INF] Now listening on: "https://localhost:7291" (d826f4b8)
+2023-05-27T17:31:59.4462111+05:00  [INF] Now listening on: "http://localhost:5291" (d826f4b8)
+2023-05-27T17:31:59.4624657+05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T17:31:59.4649509+05:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-05-27T17:31:59.4663634+05:00  [INF] Content root path: "C:\_MAIN_\Programs\WebSST_Test\WebAppSST_Test\" (b5d60022)
+2023-05-27T17:32:02.7056324+05:00 0HMQULPEV624T:00000007 [INF] eee (897fe131)
+2023-05-27T17:32:02.7163618+05:00 0HMQULPEV624T:00000007 [ERR] ffff (eabf03e0)
+2023-05-27T17:32:04.3535411+05:00 0HMQULPEV624T:00000007 [INF] Executed DbCommand ("92"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[Name], [u].[SurName]
+FROM [Users] AS [u]
+WHERE [u].[ID] = @__id_0" (0723d8ff)
+2023-05-27T17:38:24.0703646+05:00  [INF] Now listening on: "https://localhost:7291" (d826f4b8)
+2023-05-27T17:38:24.0795599+05:00  [INF] Now listening on: "http://localhost:5291" (d826f4b8)
+2023-05-27T17:38:24.0984290+05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T17:38:24.1022530+05:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-05-27T17:38:24.1040353+05:00  [INF] Content root path: "C:\_MAIN_\Programs\WebSST_Test\WebAppSST_Test\" (b5d60022)
+2023-05-27T17:38:44.4745673+05:00 0HMQULT1KRJUF:00000007 [INF] Executed DbCommand ("70"ms) [Parameters=["@p0='?' (Size = 15), @p1='?' (Size = 30)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name], [SurName])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1);" (0723d8ff)
+2023-05-27T17:40:51.2462901+05:00  [INF] Now listening on: "https://localhost:7291" (d826f4b8)
+2023-05-27T17:40:51.2530001+05:00  [INF] Now listening on: "http://localhost:5291" (d826f4b8)
+2023-05-27T17:40:51.2683822+05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T17:40:51.2719097+05:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-05-27T17:40:51.2777349+05:00  [INF] Content root path: "C:\_MAIN_\Programs\WebSST_Test\WebAppSST_Test\" (b5d60022)
+2023-05-27T17:40:57.1099232+05:00 0HMQULUDGE9Q8:00000007 [INF] Executed DbCommand ("93"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[Name], [u].[SurName]
+FROM [Users] AS [u]
+WHERE [u].[ID] = @__id_0" (0723d8ff)
+2023-05-27T17:40:57.2129165+05:00 0HMQULUDGE9Q8:00000007 [INF] Не удалось найти пользователя (958b1a36)

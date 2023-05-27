@@ -1,8 +1,50 @@
-﻿@{
+﻿
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <form method='get' action="/Home/GetUser">
+        <p>Поиск пользователя по ID</p>
+        <label>Введите ID:</label><br />
+        <input type='text' name='id' /><br />
+        <input type='submit'
+               value='Найти' />
+    </form>
+
+    <form method='get' action="/Home/AddUser">
+        <p>Добавление нового пользователя</p>
+        <label>Введите имя пользователя</label><br />
+        <input type='text' name='name' /><br />
+        <label>Введите фамилию пользователя</label><br />
+        <input type='text' name='surname' /><br />
+        <input type='submit'
+               value='Добавить' />
+    </form>
+
+    <form method='get' action="/Home/UpdateUser">
+        <p>Изменение данных пользователя</p>
+        <label>Введите фамилию обновляемого пользователя</label><br />
+        <input type='text' name='sourcesurname' /><br />
+        <label>Введите новое имя пользователя</label><br />
+        <input type='text' name='name' /><br />
+        <label>Введите новую фамилию пользователя</label><br />
+        <input type='text' name='surname' /><br />
+        <input type='submit'
+               value='Обновить' />
+    </form>
+
+    <form method='get' action="/Home/DeleteUser">
+        <p>Изменение данных пользователя</p>
+        <label>Введите фамилию удаляемого пользователя</label><br />
+        <input type='text' name='name' /><br />
+        <label>Введите фамилию удаляемого пользователя</label><br />
+        <input type='text' name='surname' /><br />
+        <input type='submit'
+               value='Удалить' />
+    </form>
+
 </div>

@@ -6,6 +6,6 @@ namespace WebAppSST_Test.Models
     {
         public int ID { get; set; }
         public string? Name { get; set; }
-        public string? SunName { get; set; }
+        public string? SurName { get; set; }
     }
 }
